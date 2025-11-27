@@ -39,6 +39,10 @@ export default {
           DEFAULT: "hsl(var(--accent))",
           foreground: "hsl(var(--accent-foreground))",
         },
+        success: {
+          DEFAULT: "hsl(var(--success))",
+          foreground: "hsl(var(--success-foreground))",
+        },
         popover: {
           DEFAULT: "hsl(var(--popover))",
           foreground: "hsl(var(--popover-foreground))",
@@ -57,6 +61,14 @@ export default {
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
         },
+      },
+      fontSize: {
+        'accessible-xs': ['1rem', { lineHeight: '1.5' }],
+        'accessible-sm': ['1.125rem', { lineHeight: '1.6' }],
+        'accessible-base': ['1.25rem', { lineHeight: '1.6' }],
+        'accessible-lg': ['1.5rem', { lineHeight: '1.5' }],
+        'accessible-xl': ['1.875rem', { lineHeight: '1.4' }],
+        'accessible-2xl': ['2.25rem', { lineHeight: '1.3' }],
       },
       borderRadius: {
         lg: "var(--radius)",
