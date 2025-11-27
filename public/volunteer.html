@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Βοήθεια από Εθελοντή - DigitalCare</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 class="logo">🏡 DigitalCare</h1>
+            <a href="index.html" class="back-button">← Επιστροφή</a>
+        </header>
+
+        <main class="main-content">
+            <div class="page-header">
+                <span class="page-icon">🤝</span>
+                <h2>Αίτημα Εθελοντικής Βοήθειας</h2>
+            </div>
+
+            <p class="page-description">Χρειάζεστε βοήθεια; Συμπληρώστε τη φόρμα και ένας εθελοντής θα επικοινωνήσει μαζί σας.</p>
+
+            <form class="form" action="mailto:volunteer@village.com" method="post" enctype="text/plain">
+                <div class="form-group">
+                    <label for="name">Ονοματεπώνυμο *</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Τηλέφωνο Επικοινωνίας *</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="address">Διεύθυνση</label>
+                    <input type="text" id="address" name="address">
+                </div>
+
+                <div class="form-group">
+                    <label for="help-type">Τι είδους βοήθεια χρειάζεστε; *</label>
+                    <select id="help-type" name="help-type" required>
+                        <option value="">Επιλέξτε...</option>
+                        <option value="shopping">Ψώνια</option>
+                        <option value="transport">Μεταφορά</option>
+                        <option value="pharmacy">Φαρμακείο</option>
+                        <option value="tech">Τεχνική Υποστήριξη</option>
+                        <option value="other">Άλλο</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="details">Περισσότερες Λεπτομέρειες</label>
+                    <textarea id="details" name="details" rows="4"></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="urgency">Επείγον;</label>
+                    <select id="urgency" name="urgency">
+                        <option value="normal">Όχι</option>
+                        <option value="urgent">Ναι</option>
+                    </select>
+                </div>
+
+                <button type="submit" class="submit-button">Αποστολή Αιτήματος</button>
+            </form>
+        </main>
+
+        <footer class="footer">
+            <p>© 2024 DigitalCare - Υπηρεσία για το Χωριό μας</p>
+        </footer>
+    </div>
+</body>
+</html>

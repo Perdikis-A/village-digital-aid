@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Έκτακτη Ανάγκη - DigitalCare</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 class="logo">🏡 DigitalCare</h1>
+            <a href="index.html" class="back-button">← Επιστροφή</a>
+        </header>
+
+        <main class="main-content">
+            <div class="page-header sos-header">
+                <span class="page-icon">🚨</span>
+                <h2>ΕΚΤΑΚΤΗ ΑΝΑΓΚΗ</h2>
+            </div>
+
+            <div class="sos-content">
+                <div class="alert-box">
+                    <h3>⚠️ Σημαντική Ειδοποίηση</h3>
+                    <p>Αυτή η σελίδα είναι για μη επείγουσες καταστάσεις. Σε περίπτωση άμεσου κινδύνου, καλέστε αμέσως:</p>
+                    <div class="emergency-numbers">
+                        <div class="emergency-item">
+                            <strong>112</strong>
+                            <span>Ευρωπαϊκός Αριθμός Έκτακτης Ανάγκης</span>
+                        </div>
+                        <div class="emergency-item">
+                            <strong>1400</strong>
+                            <span>Κέντρο Υγείας</span>
+                        </div>
+                        <div class="emergency-item">
+                            <strong>199</strong>
+                            <span>Πυροσβεστική</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sos-form-section">
+                    <h3>Αποστολή Ειδοποίησης</h3>
+                    <p>Αν χρειάζεστε βοήθεια αλλά δεν είναι άμεση έκτακτη ανάγκη, συμπληρώστε τη φόρμα:</p>
+
+                    <form class="form" action="mailto:emergency@village.com" method="post" enctype="text/plain">
+                        <div class="form-group">
+                            <label for="name">Ονοματεπώνυμο *</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone">Τηλέφωνο *</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="location">Που βρίσκεστε; *</label>
+                            <input type="text" id="location" name="location" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="situation">Τι συνέβη; *</label>
+                            <textarea id="situation" name="situation" rows="4" required></textarea>
+                        </div>
+
+                        <button type="submit" class="submit-button sos-button">ΑΠΟΣΤΟΛΗ ΕΙΔΟΠΟΙΗΣΗΣ</button>
+                    </form>
+                </div>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <p>© 2024 DigitalCare - Υπηρεσία για το Χωριό μας</p>
+        </footer>
+    </div>
+</body>
+</html>
